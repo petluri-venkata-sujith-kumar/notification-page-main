@@ -1,0 +1,78 @@
+// user - components
+@import "./declare";
+
+.components-container {
+  width: 98.5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  position: relative;
+  left: 2.7%;
+  font-weight: 600;
+  font-size: 18px;
+}
+.user-component1,
+.user-component2,
+.user-component3 {
+  padding-top: 2%;
+  color: rgb(54, 53, 53);
+}
+.user-calender {
+  border-radius: 5px;
+  overflow: hidden;
+  color: rgb(30, 56, 75);
+}
+
+.user-component2 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  .user-birthday,
+  .user-welcome {
+    height: 210px;
+    width: 370px;
+    background: linear-gradient(90deg, white, rgb(244, 250, 237));
+    border-radius: 5px;
+  }
+  .user-welcome {
+    background: linear-gradient(90deg, white, rgb(243, 228, 238));
+  }
+}
+
+#birthday-box {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+#birthday-box section{
+  display: flex;
+  padding-top: 12px;
+  h1{
+    letter-spacing: 1px;
+  }
+  article{
+    font-size: 30px;
+  }
+}
+.user-component3 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  .user-learning,
+  .user-survey,
+  .user-morelinks,
+  .user-socialmedia {
+    // height: 233px;
+    // width: 395px;
+    height: 200px;
+    width: 300px;
+    background: linear-gradient(90deg, white, rgb(230, 247, 242));
+    border-radius: 5px;
+  }
+  .user-survey {
+    background: linear-gradient(90deg, white, rgb(247, 239, 231));
+  }
+  .user-socialmedia {
+    background: linear-gradient(90deg, white, rgb(247, 245, 233));
+  }
+}

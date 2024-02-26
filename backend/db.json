@@ -1,0 +1,194 @@
+{
+  "users": [
+    {
+      "id": "ad01",
+      "firstName": "Bill",
+      "lastName": "Gates",
+      "email": "admin@gmail.com",
+      "password": "admin@123",
+      "domain": "admin",
+      "imageUrl": "https://mui.com/static/images/avatar/1.jpg",
+      "role": "admin",
+      "comment": [
+        "this is notification",
+        "Commented",
+        "Trial",
+        "notification",
+        "final Comment .."
+      ],
+      "like": true
+    },
+    {
+      "id": "3d32",
+      "firstName": "venkata sujith kumar",
+      "lastName": "petluri",
+      "dateOfBirth": "2001-10-21",
+      "email": "sujithkumarkavali@gmail.com",
+      "password": "sujith123",
+      "domain": "developer",
+      "imageUrl": "https://mui.com/static/images/avatar/5.jpg",
+      "role": "user",
+      "like": true,
+      "comment": [
+        "this is notification",
+        "Commented",
+        "Trial",
+        "notification",
+        "final Comment .."
+      ]
+    },
+    {
+      "id": "13eb",
+      "firstName": "krishan",
+      "lastName": "kumar",
+      "dateOfBirth": "2024-02-03",
+      "email": "krishan@gmail.com",
+      "password": "12345",
+      "domain": "developer",
+      "imageUrl": "https://mui.com/static/images/avatar/1.jpg",
+      "role": "user",
+      "like": true,
+      "comment": [
+        "this is notification",
+        "Commented",
+        "Trial",
+        "notification",
+        "final Comment .."
+      ]
+    },
+    {
+      "id": "d73e",
+      "firstName": "monika",
+      "lastName": "k",
+      "dateOfBirth": "2024-02-03",
+      "email": "monika@gmail.com",
+      "password": "12345",
+      "domain": "developer",
+      "imageUrl": "https://mui.com/static/images/avatar/3.jpg",
+      "role": "user",
+      "like": false,
+      "comment": [
+        "this is notification",
+        "Commented",
+        "Trial",
+        "notification",
+        "final Comment .."
+      ]
+    },
+    {
+      "id": "658c",
+      "firstName": "Divyanshu",
+      "lastName": "Ahirrao",
+      "dateOfBirth": "2024-01-31",
+      "email": "divyanshu@gmail.com",
+      "password": "12345",
+      "domain": "developer",
+      "imageUrl": "https://mui.com/static/images/avatar/2.jpg",
+      "role": "user",
+      "like": false,
+      "comment": [
+        "this is notification",
+        "Commented",
+        "Trial",
+        "notification",
+        "final Comment .."
+      ]
+    },
+    {
+      "id": "7c50",
+      "firstName": "Steve",
+      "lastName": "Jobs",
+      "dateOfBirth": "1970-06-01",
+      "email": "steve@gmail.com",
+      "password": "admin@123",
+      "domain": "admin",
+      "imageUrl": "https://media.gettyimages.com/id/96211512/photo/san-francisco-apple-inc-ceo-steve-jobs-announces-the-new-ipad-as-he-speaks-during-an-apple.jpg?s=612x612&w=0&k=20&c=Ntu7yOYeuU82k-BL1cl1TBtjCkxTLcXbb2H_tCtO5qA=",
+      "role": "admin",
+      "like": false,
+      "comment": [
+        "notification",
+        "final Comment .."
+      ]
+    },
+    {
+      "id": "2746",
+      "firstName": "Varun",
+      "lastName": "Patil",
+      "dateOfBirth": "1999-12-09",
+      "email": "varun@patil",
+      "password": "12345",
+      "domain": "Analyst",
+      "imageUrl": "https://pbs.twimg.com/profile_images/1540625944662413312/bPIe5j8C_400x400.jpg",
+      "role": "user",
+      "like": false,
+      "comment": [
+        "notification",
+        "final Comment .."
+      ]
+    },
+    {
+      "id": "2305",
+      "firstName": "Rohit",
+      "lastName": "Sharma",
+      "dateOfBirth": "1976-07-22",
+      "email": "rohit@gmail.com",
+      "password": "12345",
+      "domain": "Network",
+      "imageUrl": "https://pbs.twimg.com/profile_images/949357419125137408/ddMh0ln7_400x400.jpg",
+      "role": "user",
+      "like": false,
+      "comment": [
+        "notification",
+        "final Comment .."
+      ]
+    },
+    {
+      "id": "1db5",
+      "firstName": "Virat",
+      "lastName": "Kohli",
+      "dateOfBirth": "1990-11-18",
+      "email": "virat@gmail.com",
+      "password": "12345",
+      "domain": "Devops",
+      "imageUrl": "https://pbs.twimg.com/profile_images/1024066946856366087/yEYZOKKH_400x400.jpg",
+      "role": "user",
+      "like": false,
+      "comment": [
+        "notification",
+        "final Comment .."
+      ]
+    },
+    {
+      "id": "8746",
+      "firstName": "Ishan",
+      "lastName": "Kishan",
+      "dateOfBirth": "1996-06-18",
+      "email": "ishan@gmail.com",
+      "password": "12345",
+      "domain": "Developer",
+      "imageUrl": "https://pbs.twimg.com/profile_images/1427856018256580609/8eYeSD5a_400x400.jpg",
+      "role": "user",
+      "like": true,
+      "comment": [
+        "notification",
+        "final Comment .."
+      ]
+    },
+    {
+      "id": "7ff6",
+      "firstName": "Shubhman",
+      "lastName": "Gill",
+      "dateOfBirth": "1999-02-17",
+      "email": "shubhman@gmail.com",
+      "password": "12345",
+      "domain": "Tester",
+      "imageUrl": "https://pbs.twimg.com/profile_images/1552321967449329664/4aPJxoDW_400x400.jpg",
+      "role": "user",
+      "like": false,
+      "comment": [
+        "notification",
+        "final Comment .."
+      ]
+    }
+  ]
+}

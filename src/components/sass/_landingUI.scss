@@ -1,0 +1,85 @@
+@import "./declare";
+
+#ui-container {
+  width: 100%;
+  background: $primaryColor;
+  transition: all 0.35s ease-in-out;
+  color: $secondaryColor;
+  // background-image: url("../media/bg-img.jpg");
+}
+#navbar {
+  height: 75px;
+  // background: linear-gradient(90deg, rgb(167, 162, 234) , rgb(241, 168, 215));
+  background: linear-gradient(90deg, rgb(2, 0, 27), rgba(35, 0, 23, 0.5));
+  border-bottom: 2px solid slategray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  font-size: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.511);
+}
+.notify-bell {
+  color: #c5c4c4;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+  filter: drop-shadow(1px 1px 3px rgba(56, 40, 116, 0.7));
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.438);
+    padding: 2px 2px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+}
+.nav-profile {
+  transform: scale(0.75);
+  position: relative;
+  left: 20%;
+  background-color: red;
+}
+
+.nav-side-left {
+  width: 80%;
+}
+
+
+.toggle-icon {
+  position: relative;
+  padding: 10px;
+  font-size: 19.9px;
+  .fa-regular {
+    transition: all 0.1s;
+  }
+  &:last-child {
+    visibility: hidden;
+  }
+}
+
+.animate-box {
+  @include centered();
+  height: 20px;
+  width: 35px;
+  background-color: #eee;
+  border-radius: 18px;
+  justify-content: end;
+  padding-left: 3.5px;
+  padding-right: 3.5px;
+  .box-ball {
+    height: 13px;
+    width: 13px;
+    background-color: $primaryColor;
+    border-radius: 50%;
+  }
+}
+
+#notify-box {
+  animation: color-changer 5s infinite ;
+  transition: all 0.3s ease;
+  background: linear-gradient(45deg, white,white, rgb(245, 226, 229));
+}
+
+

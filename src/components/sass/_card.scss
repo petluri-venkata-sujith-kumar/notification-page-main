@@ -1,0 +1,36 @@
+@import "./declare";
+
+#cards-container {
+  
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.card {
+  height: 350px;
+  width: 260px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.card-img-box {
+  height: 75%;
+  @include centered();
+  font-size: 45px;
+}
+.card-img {
+  height: 100%;
+  width: 100%;
+}
+.card-icon{
+  transform: scale(1.2);
+}
+.card-details {
+  height: 25%;
+  justify-content: space-between;
+  font-size: 25px;
+  background: linear-gradient(white ,rgba(0, 0, 0, 0.438));
+}
