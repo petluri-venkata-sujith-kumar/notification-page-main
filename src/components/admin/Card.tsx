@@ -15,7 +15,6 @@ import toast from "react-hot-toast";
 const Card = ({ prop }: any) => {
   let [liked, setLiked] = useState(true);
   let [save, setSave] = useState(false);
-  // const payload = prop?.userData.payload;
   console.log(prop);
 
   const likes = async () => {
@@ -29,9 +28,6 @@ const Card = ({ prop }: any) => {
 
     try {
       const { id, like:boolean } = prop;
-
-      // Construct the new notifications array including the new notification
-      // const newNotifications = [...comment, notification];
 
       await axios.patch(`http://localhost:5000/users/${id}`, {
         like: liked,
