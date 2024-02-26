@@ -23,7 +23,7 @@ const Navbar = () => {
     {
       notify > 0
         ? toast.custom((t) => (
-            <section className="w-[100%] h-[95vh] flex justify-end items-end">
+            <section className="w-[100%] h-[10vh] flex justify-end items-end">
               <div
                 className={`${
                   t.visible ? "animate-enter" : "animate-leave"
