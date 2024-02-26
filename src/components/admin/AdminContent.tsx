@@ -1,8 +1,6 @@
 import AdminNavbar from "./AdminNavbar";
 import Cards from "./Cards";
 import { BarChart } from "@mui/x-charts/BarChart";
-import AdminTable from "./AdminTable";
-import UsersBanner from "./UsersBanner";
 import DomainPercentage from "./DomainPercentage";
 import map from '../media/maps.png'
 // importing aos
@@ -40,14 +38,14 @@ const AdminContent = () => {
           </aside>
         </article>
 
-        <article className="w-[100%] flex gap-2 px-12 pt-10">
+        {/* <article className="w-[100%] flex gap-2 px-12 pt-10">
           <aside className="w-[30%]">
             <UsersBanner />
           </aside>
           <aside className="w-[70%]">
             <AdminTable />
           </aside>
-        </article>
+        </article> */}
         <Cards />
 
         <div className="w-[100%] flex justify-center pb-10">
