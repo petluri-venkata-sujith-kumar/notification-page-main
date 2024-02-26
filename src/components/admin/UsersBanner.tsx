@@ -74,8 +74,8 @@ const UsersBanner = () => {
         <Card
           variant="outlined"
           sx={{
-            minHeight: "245px",
-            width: 290,
+            height: "265px",
+            width: "1",
             backgroundColor: "#fff",
             borderColor: "#000",
           }}
