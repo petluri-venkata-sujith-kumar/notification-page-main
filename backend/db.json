@@ -29,13 +29,7 @@
       "imageUrl": "https://mui.com/static/images/avatar/5.jpg",
       "role": "user",
       "like": true,
-      "comment": [
-        "this is notification",
-        "Commented",
-        "Trial",
-        "notification",
-        "final Comment .."
-      ]
+      "comment": []
     },
     {
       "id": "13eb",
@@ -49,11 +43,9 @@
       "role": "user",
       "like": true,
       "comment": [
-        "this is notification",
         "Commented",
         "Trial",
-        "notification",
-        "final Comment .."
+        "notification"
       ]
     },
     {
@@ -68,9 +60,6 @@
       "role": "user",
       "like": false,
       "comment": [
-        "this is notification",
-        "Commented",
-        "Trial",
         "notification",
         "final Comment .."
       ]

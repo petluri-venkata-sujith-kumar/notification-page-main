@@ -5,7 +5,7 @@ import InputBase from "@mui/material/InputBase";
 import { Link, useLocation } from "react-router-dom";
 import NotifyModal from "./NotifyModal";
 import { useEffect, useState } from "react";
-import toast from "react-hot-toast";
+// import toast from "react-hot-toast";
 const Navbar = () => {
   const user = useLocation();
   const userData = user.state.user;
@@ -20,47 +20,47 @@ const Navbar = () => {
         ? setNotify(userData.comment.length + 1)
         : setNotify(userData.comment.length);
     }
-    {
-      notify > 0
-        ? toast.custom((t) => (
-            <section className="w-[100%] h-[10vh] flex justify-end items-end">
-              <div
-                className={`${
-                  t.visible ? "animate-enter" : "animate-leave"
-                } max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5 `}
-              >
-                <div className="flex-1 w-0 p-4">
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 pt-0.5">
-                      <img
-                        className="h-10 w-10 rounded-full"
-                        src={userData.imageUrl}
-                        alt="user"
-                      />
-                    </div>
-                    <div className="ml-3 flex-1">
-                      <p className="text-sm font-medium text-gray-900">
-                        {userData.firstName}
-                      </p>
-                      <p className="mt-1 text-sm text-gray-500">
-                        You have New Notifications !!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex border-l border-gray-200">
-                  <button
-                    onClick={() => toast.dismiss(t.id)}
-                    className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            </section>
-          ))
-        : "";
-    }
+    // {
+    //   notify > 0
+    //     ? toast.custom((t) => (
+    //         <section className="w-[100%] h-[10vh] flex justify-end items-end">
+    //           <div
+    //             className={`${
+    //               t.visible ? "animate-enter" : "animate-leave"
+    //             } max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5 `}
+    //           >
+    //             <div className="flex-1 w-0 p-4">
+    //               <div className="flex items-start">
+    //                 <div className="flex-shrink-0 pt-0.5">
+    //                   <img
+    //                     className="h-10 w-10 rounded-full"
+    //                     src={userData.imageUrl}
+    //                     alt="user"
+    //                   />
+    //                 </div>
+    //                 <div className="ml-3 flex-1">
+    //                   <p className="text-sm font-medium text-gray-900">
+    //                     {userData.firstName}
+    //                   </p>
+    //                   <p className="mt-1 text-sm text-gray-500">
+    //                     You have New Notifications !!
+    //                   </p>
+    //                 </div>
+    //               </div>
+    //             </div>
+    //             <div className="flex border-l border-gray-200">
+    //               <button
+    //                 onClick={() => toast.dismiss(t.id)}
+    //                 className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+    //               >
+    //                 Close
+    //               </button>
+    //             </div>
+    //           </div>
+    //         </section>
+    //       ))
+    //     : "";
+    // }
   }, [notify]);
 
   const Search = styled("div")(({ theme }) => ({

@@ -8,22 +8,19 @@ const NotifyModal = ({ prop }: { prop: number }) => {
   const [openModal, setOpenModal] = useState(false);
   const emailInputRef = useRef<HTMLInputElement>(null);
   const [notifier, setNotifier] = useState<number>(0);
-  const [flag , setFlag] = useState(false);
-
-  
+  const [flag, setFlag] = useState(false);
 
   useEffect(() => {
     setNotifier(prop);
-    {flag ? setNotifier(0) : notifier}
+    {
+      flag ? setNotifier(0) : notifier;
+    }
   }, [prop, notifier, flag]);
 
   const notifyOpener = () => {
     setFlag(true);
     setOpenModal(true);
-    console.log(notifier);
   };
-
-
 
   return (
     <>
