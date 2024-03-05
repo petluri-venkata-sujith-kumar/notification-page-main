@@ -6,7 +6,6 @@ import Box from "@mui/material/Box";
 import LikeComponent from "./LikeComponent";
 import { useLocation } from "react-router-dom";
 import CommentNotify from "./CommentNotify";
-import { MdCancel } from "react-icons/md";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -45,41 +44,39 @@ export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
   const user = useLocation();
   const userData = user.state.user;
-  
+
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 
   return (
-    <>
-      <Box sx={{ width: "100%" }}>
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            aria-label="basic tabs example"
-          >
-            <Tab label="Comment" {...a11yProps(0)} />
-            <Tab label="Like" {...a11yProps(1)} />
-          </Tabs>
-        </Box>
-        <CustomTabPanel value={value} index={0}>
-          <section className="flex flex-col gap-2">
-            {userData.comment.map((e: string, i: number) => (
-              <div key={i}>
-                <div>
-                  <CommentNotify content={e} />
-                </div>
-              </div>
-            ))}
-          </section>
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={1}>
-          <section className="flex flex-col gap-2">
-            {userData.like ? <LikeComponent /> : ""}
-          </section>
-        </CustomTabPanel>
+    <Box sx={{ width: "100%" }}>
+      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label="basic tabs example"
+        >
+          <Tab label="Comment" {...a11yProps(0)} />
+          <Tab label="Like" {...a11yProps(1)} />
+        </Tabs>
       </Box>
-    </>
+      <CustomTabPanel value={value} index={0}>
+        <section className="flex flex-col gap-2">
+          {userData.comment.map((e: string, i: number) => (
+            <div key={i}>
+              <div>
+                <CommentNotify content={e} />
+              </div>
+            </div>
+          ))}
+        </section>
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={1}>
+        <section className="flex flex-col gap-2">
+          {userData.like ? <LikeComponent /> : ""}
+        </section>
+      </CustomTabPanel>
+    </Box>
   );
 }
