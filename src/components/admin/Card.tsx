@@ -33,7 +33,7 @@ const Card = ({ prop }: any) => {
         like: liked,
       });
 
-      toast.success(`You Liked ${prop.firstName}`);
+      {liked ? toast.success(`You Liked ${prop.firstName}`) : toast.error(`you disliked ${prop.firstName}`)}
     } catch (error) {
       console.error("Error updating notifications:", error);
       toast.error("Failed to send notification");
