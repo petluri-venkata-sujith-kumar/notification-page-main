@@ -11,10 +11,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { PayloadProps } from "../../types/PayloadType";
 
-const Card = ({ prop }: any) => {
-  let [liked, setLiked] = useState(true);
-  let [save, setSave] = useState(false);
+const Card = ({ prop }: PayloadProps) => {
+  const [liked, setLiked] = useState(true);
+  const [save, setSave] = useState(false);
   console.log(prop);
 
   const likes = async () => {
@@ -27,7 +28,7 @@ const Card = ({ prop }: any) => {
     }
 
     try {
-      const { id, like:boolean } = prop;
+      const { id } = prop;
 
       await axios.patch(`http://localhost:5000/users/${id}`, {
         like: liked,
@@ -40,7 +41,7 @@ const Card = ({ prop }: any) => {
     }
   };
 
-  console.log(prop);
+  // console.log(prop);
 
   useEffect(() => {
     AOS.init();

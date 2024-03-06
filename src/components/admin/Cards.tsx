@@ -1,5 +1,3 @@
-import { useLocation } from "react-router-dom";
-import DATA from "../jsonData/data.json";
 import Card from "./Card";
 import CommentBox from "./CommentBox";
 import { UsersContextApi } from "../../context/UserContext";
@@ -18,7 +16,7 @@ const Cards = () => {
               return <Card prop={e} />;
             }
           })}
-        <article className=" m-auto sticky bottom-8 left-[25%]">
+        <article className=" m-auto sticky bottom-10 left-[25%]">
           <CommentBox />
         </article>
       </main>

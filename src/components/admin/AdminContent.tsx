@@ -2,7 +2,7 @@ import AdminNavbar from "./AdminNavbar";
 import Cards from "./Cards";
 import { BarChart } from "@mui/x-charts/BarChart";
 import DomainPercentage from "./DomainPercentage";
-import map from '../media/maps.png'
+// import map from '../media/maps.png'
 // importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -38,21 +38,13 @@ const AdminContent = () => {
           </aside>
         </article>
 
-        {/* <article className="w-[100%] flex gap-2 px-12 pt-10">
-          <aside className="w-[30%]">
-            <UsersBanner />
-          </aside>
-          <aside className="w-[70%]">
-            <AdminTable />
-          </aside>
-        </article> */}
         <Cards />
 
-        <div className="w-[100%] flex justify-center pb-10">
+        {/* <div className="w-[100%] flex justify-center pb-10">
         <article data-aos="flip-up" data-aos-duration="1000" className="w-[95%] overflow-hidden">
           <img src={map} alt="maps" className="rounded-lg hover:scale-[2.4] transition-all duration-[2s] cursor-pointer"/>
         </article>
-        </div>
+        </div> */}
 
       </section>
     </div>

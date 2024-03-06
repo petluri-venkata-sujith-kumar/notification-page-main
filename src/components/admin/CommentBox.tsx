@@ -100,7 +100,7 @@ const CommentBox: React.FC = e => {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography>Write your Message here !!</Typography>
+          <Typography>Write your Notification Message here !!</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <div className="flex justify-between">
