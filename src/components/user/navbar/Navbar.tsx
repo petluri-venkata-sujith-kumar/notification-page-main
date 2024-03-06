@@ -5,13 +5,18 @@ import InputBase from "@mui/material/InputBase";
 import { Link, useLocation } from "react-router-dom";
 import NotifyModal from "./NotifyModal";
 import { useEffect, useState } from "react";
-// import toast from "react-hot-toast";
+import toast from "react-hot-toast";
 const Navbar = () => {
   const user = useLocation();
   const userData = user.state.user;
 
   const [liker, setLiker] = useState(false);
   const [notify, setNotify] = useState(0);
+
+  const handleLogout=()=>{
+    window.localStorage.removeItem("loginUser")
+    toast.success('logout Successfully !')
+   }
 
   useEffect(() => {
     setLiker(userData.like);
@@ -130,7 +135,7 @@ const Navbar = () => {
             className="scale-125 border-2 hover:scale-110 cursor-pointer transition-all duration-200 relative right-8"
           />
           <Link to="/">
-            <button className="opacity-85 cursor-pointer px-8 py-2 rounded-lg bg-gray-100 text-black hover:text-white hover:border-2 hover:border-emerald-100 hover:bg-gray-900 transition-all duration-200">
+            <button onClick={handleLogout} className="opacity-85 cursor-pointer px-8 py-2 rounded-lg bg-gray-100 text-black hover:text-white hover:border-2 hover:border-emerald-100 hover:bg-gray-900 transition-all duration-200">
               Logout
             </button>
           </Link>

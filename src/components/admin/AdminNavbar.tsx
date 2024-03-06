@@ -5,6 +5,7 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import "@fontsource/roboto/500.css";
 import { Link, useLocation } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const AdminNavbar = () => {
   const user = useLocation();
@@ -12,6 +13,7 @@ const AdminNavbar = () => {
   const userData = user.state.user;
   const handleLogout=()=>{
     window.localStorage.removeItem("loginUser")
+    toast.success('logout Successfully !')
    }
   const Search = styled("div")(({ theme }) => ({
     position: "relative",
